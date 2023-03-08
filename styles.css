@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}@media (max-width: 768px){
+    body{
+        display: block;
+    }
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.664);
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+}@media (max-width: 768px){
+    .container{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+/*Formulario*/
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}@media (max-width: 768px){
+    .formulario{
+        flex-direction: column;
+    }
+}
+.formulario__input{
+    display: flex;
+}
+.cidade_input{
+    padding: 10px 30px 10px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}@media (max-width: 768px){
+    .cidade_input{
+        position: relative;
+        left: 11px;
+    }
+}
+.botao_img{
+    height: 20px;
+}
+button{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+    top: 1px;
+}@media (max-width: 768px){
+    button{
+        right: 20px;
+    }
+}
+h1{
+    font-weight: 300;
+}
+
+/* Retorno */
+.container_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000000;
+}@media (max-width: 768px){
+    .container_info{
+        max-width: 100vw;
+    }
+}
+.container_titulo{
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.titulo{
+    font-size: 2rem;
+    margin: 10px 0 40px 0;
+}
+.descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.icone_weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+}@media (max-width: 768px){
+    .icone_weather{
+        width: 100%;
+    }
+}
+.icone_weather:last-child{
+    border-bottom: 1px solid #fff;
+}
+.container_info p {
+    font-size: 1rem;
+    position: relative;
+    top: 60px;
+}
